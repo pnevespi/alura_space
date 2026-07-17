@@ -55,6 +55,11 @@
                             {{field}}
 
                         </div>
+
+                        {% form error in field.erros%}
+                            <div class="alert alert-danger">
+                                {{error}}
+                            </div>
                         {% endfor %}
                         
                     </div>
